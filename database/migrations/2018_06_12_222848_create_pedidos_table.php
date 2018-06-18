@@ -17,6 +17,10 @@ class CreatePedidosTable extends Migration
             $table->increments('id');
             $table->string('produto', 100);
             $table->integer('quantidade');
+            $table->string('rua', 100);
+            $table->string('n', 100);
+            $table->string('bairro', 100);
+            $table->integer('comp')->nullable();
             $table->timestamps();
         });
     }

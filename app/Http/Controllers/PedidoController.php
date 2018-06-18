@@ -42,6 +42,10 @@ class PedidoController extends Controller
 
         $pedido->produto = $request['produto'];
         $pedido->quantidade = $request['quantidade'];
+        $pedido->rua = $request['rua'];
+        $pedido->n = $request['n'];
+        $pedido->bairro = $request['bairro'];
+        $pedido->comp = $request['comp'];
 
         $pedido->save();
         
